@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Sourdough Pre-Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #4A4A4A;
+        }
+        .hero img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .pricing {
+            font-size: 1.2em;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #d35400;
+        }
+        .cta {
+            background: #d35400;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        .cta:hover {
+            background: #b84300;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        button {
+            background: #27ae60;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background: #219150;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fresh 3-Ingredient Sourdough</h1>
+        <div class="hero">
+            <img src="bread.jpg" alt="Fresh sourdough bread">
+        </div>
+        <p>Handmade, naturally fermented, and delivered fresh to your door every week.</p>
+        <div class="pricing">Only <strong>$14 per loaf</strong> (subscription discounts available!)</div>
+        
+        <a href="#preorder" class="cta">Pre-Order Now</a>
+
+        <form id="preorder">
+            <h2>Pre-Order Now</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="address" placeholder="Delivery Address" required>
+            <select name="quantity" required>
+                <option value="1">1 Loaf - $14</option>
+                <option value="2">2 Loaves - $26 (Save $2)</option>
+                <option value="4">4 Loaves - $48 (Save $8)</option>
+            </select>
+            <button type="submit">Place Pre-Order</button>
+        </form>
+    </div>
+</body>
+</html>
